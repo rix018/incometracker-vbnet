@@ -1,0 +1,3 @@
+﻿Module modGlobals
+
+End Module

@@ -1,0 +1,7 @@
+Home (Dashboard)
+New Record
+Pay
+Articles
+Categories
+Customers
+Report
