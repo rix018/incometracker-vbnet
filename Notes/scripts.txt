@@ -1,0 +1,36 @@
+CREATE TABLE `dbmain`.`tbl1transactions` (
+  `RecordID` INT NOT NULL,
+  `RecordDate` VARCHAR(6) NULL,
+  `CustomerID` INT NOT NULL,
+  `ProductCode` VARCHAR(45) NOT NULL,
+  `Price` VARCHAR(45) NOT NULL,
+  `Paid` TINYINT NULL DEFAULT '0',
+  `DependentID` VARCHAR(45) NULL,
+  `ArticleID` INT NOT NULL,
+  PRIMARY KEY (`RecordID`));
+
+CREATE TABLE `dbmain`.`tblcustomers` (
+  `CustomerID` INT NOT NULL,
+  `MobileNumber` VARCHAR(45) NULL,
+  `Notes` VARCHAR(45) NULL,
+  `DateCreated` VARCHAR(6) NULL,
+  PRIMARY KEY (`CustomerID`));
+
+CREATE TABLE `dbmain`.`tblarticles` (
+  `ArticleID` INT NOT NULL,
+  `ProductKey` VARCHAR(45) NOT NULL,
+  `Price` DECIMAL NOT NULL,
+  `ItemCategory` VARCHAR(45) NOT NULL,
+  `PriceOp` VARCHAR(45) NOT NULL,
+  `PriceAdd` DECIMAL NOT NULL,
+  `PriceRangeFrom` DECIMAL NOT NULL,
+  `PriceRangeTo` DECIMAL NOT NULL,
+  `TotalPrice` DECIMAL NOT NULL,
+  `ItemDescription` VARCHAR(45) NULL,
+  PRIMARY KEY (`ArticleID`));
+
+CREATE TABLE `dbmain`.`tblcategories` (
+  `CatID` INT NOT NULL,
+  `CatDescription` VARCHAR(45) NULL,
+  PRIMARY KEY (`CatID`));
+

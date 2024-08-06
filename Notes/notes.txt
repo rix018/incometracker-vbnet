@@ -1,0 +1,8 @@
+Article Pricing
+-Percentage
+-Add
+-Manual
+
+Categories
+-Load
+-Rent
